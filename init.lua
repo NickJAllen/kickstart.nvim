@@ -93,6 +93,8 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+--vim.opt.termguicolors = true
+
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -232,6 +234,10 @@ require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'Mofiqul/vscode.nvim',
   'tomasiser/vim-code-dark',
+  {
+    'freddiehaddad/feline.nvim',
+    opts = {},
+  },
   'mfussenegger/nvim-jdtls',
   {
     'nvimdev/lspsaga.nvim',
